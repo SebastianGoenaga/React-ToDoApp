@@ -32,7 +32,7 @@ class EditUser extends Component {
     }
     handleNameSubmit(event) {
         this.setState({ name: event.target.value });
-        localStorage.setItem('name', event.target.value);
+        localStorage.setItem('namePrueba', event.target.value);
     }
     handleEmailSubmit(event) {
 
