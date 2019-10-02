@@ -15,7 +15,7 @@ class NewUser extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { name: "", email: "", username: "", password: "", password2: "", doRedirect: false, errorMessage: "", loading: false };
+        this.state = { namePrueba: "", email: "", username: "", password: "", password2: "", doRedirect: false, errorMessage: "", loading: false };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleNameSubmit = this.handleNameSubmit.bind(this);
         this.handleEmailSubmit = this.handleEmailSubmit.bind(this);
@@ -40,7 +40,7 @@ class NewUser extends Component {
     }
     handleNameSubmit(event) {
         this.setState({ name: event.target.value });
-        localStorage.setItem('name', event.target.value);
+        localStorage.setItem('namePrueba', event.target.value);
     }
     handlePasswordSubmit(event) {
 
@@ -63,7 +63,7 @@ class NewUser extends Component {
         const user = {
             "username": localStorage.getItem("userName"),
             "password": localStorage.getItem("password"),
-            "name": localStorage.getItem("name"),
+            "name": localStorage.getItem("namePrueba"),
             "email": localStorage.getItem("email")
         };
         this.setState({ loading: true });
