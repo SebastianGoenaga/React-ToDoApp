@@ -233,7 +233,7 @@ class PersistentPrifileLeft extends React.Component {
                     <List className={classes.avatarBox}>
                         <ListItem>
                             <ListItemAvatar style={{ left: -8, }}>
-                                <Avatar style={{ color: '#000' }} >
+                                <Avatar style={{ color: '#000' }}>
                                 {localStorage.getItem('name').charAt(0).toUpperCase()}</Avatar>
                             </ListItemAvatar>
 
